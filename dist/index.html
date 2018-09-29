@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米官网</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" href="imgs/favicon1.ico" type="image/x-icon">
+    <link rel="icon" href="imgs/favicon1.ico" type="image/x-icon">
+    <script src="js/jquery.js"></script>
+    <link href="https://cdn.bootcss.com/Swiper/4.3.0/css/swiper.css" rel="stylesheet">
+    <script src="js/index.js"></script>
+</head>
+<style>
+    .warp .hotPro {
+        width: 1226px;
+        height: 170px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .warp .hotPro .icon{
+        width: 235px;
+        background: #5F5750;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .warp .hotPro .icon>div{
+        width: 77px;
+        height: 85px;
+        color: #cccccc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .warp .hotPro .icon>div i{
+        font-size: 30px;
+        color: #cccccc;
+    }
+    .warp .hotPro .phone{
+        width: 320px;
+        height: 100%;
+    }
+    .warp .hotPro .phone img{
+        width: 100%;
+        height: 100%;
+    }
+    .miBuy{
+        margin: 40px auto;
+        width: 1226px;
+        height: 393px;
+    }
+    .miBuy h2{
+        line-height: 50px;
+        font-size: 23px;
+        color: #333333;
+    }
+    .miBuy .hotBuy{
+        width: 100%;
+        height: 343px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .miBuy .hotBuy>div:nth-of-type(1){
+        background: #F1EDED;
+        border-top: 1px solid red;
+        width: 235px;
+        height: 100%;
+    }
+    .miBuy .hotBuy div:nth-of-type(1) img{
+        width: 40px;
+        height: 54px;
+    }
+    .miBuy .hotBuy>div{
+        border-top: 1px solid green;
+        width: 235px;
+        height: 100%;
+    }
+    .miBuy .hotBuy>div img{
+        width: 100%;
+        height: 100%;
+    }
+    .line{
+        width: 1226px;
+        height: 120px;
+        margin: 20px auto;
+    }
+    .line img{
+        width: 100%;
+        height: 100%;
+    }
+    .time{
+        box-sizing: border-box;
+        padding: 50px 34px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .time p:nth-of-type(1){
+        line-height: 70px;
+        font-size: 16px;
+        color: #E53934;
+    }
+    .time p:nth-of-type(2){
+        font-size: 14px;
+        color: #333333;
+        line-height: 70px;
+    }
+    .time .dTime{
+        width: 165px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        line-height: 52px;
+    }
+    .time .dTime span{
+        display: inline-block;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        text-align: center;
+        line-height: 50px;
+        background:#605751;
+    }
+    .miFanW{
+        width: 100%;
+        background: #F5F5F5;
+    }
+    .miFan{
+        width: 1226px;
+        margin: 0 auto;
+    }
+    .miFanW h2{
+        line-height: 50px;
+        font-size: 23px;
+        color: #333333;
+    }
+    .miFanW .miFan .miFanList{
+        margin: 0 auto;
+        padding-bottom: 20px;
+        width: 1226px;
+        height: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .miFan .miFanList>div{
+        position: relative;
+        width: 235px;
+        height: 300px;
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+    .miFan .miFanList>div:hover{
+        box-shadow: 5px 5px 10px #ccc,-5px -5px 10px #ccc;
+    }
+    .miFan .miFanList>div>img{
+        width: 100%;
+        height: 100%;
+    }
+    .miFan .miFanList .miFanPro:hover .hoverDv {
+        bottom: 0;
+    }
+    .hoverDv{
+        width: 235px;
+        height: 78px;
+        position: absolute;
+        bottom: -78px;
+        transition: all 0.5s;
+    }
+    .hoverDv img{
+        width: 100%;
+        height: 100%;
+    }
+
+</style>
+<body>
+<div class="head" style="background-image: url('//i1.mifile.cn/a4/cms_15373613801205_jTFBI.jpg');">
+
+</div>
+<div class="nav">
+    <nav>
+        <ul class="left">
+            <li>小米</li>
+            <li>MIUI</li>
+            <li>Iot</li>
+            <li>云服务</li>
+            <li>金融</li>
+            <li>优品</li>
+            <li>小爱开放品台</li>
+            <li>政企服务</li>
+            <li>Select Region</li>
+        </ul>
+        <ul class="right">
+            <li class=""><a href="html/login.html">登录</a>
+                <ul>
+                    <li>退出登录</li>
+                    <li>修改密码</li>
+                </ul>
+            </li>
+            <li><a href="html/regest.html">注册</a></li>
+            <li><a href="#">消息通知</a></li>
+            <li class="cartLi"><a href="#"><i class="iconfont">&#xe6bb;</i>购物车(<b>0</b>)</a>
+                <div class="cart">
+                    <div class="cartNone">购物车中还没有商品，赶紧选购吧！</div>
+                    <!--<div class="cartList"><img src="../imgs/slider2.jpg" alt=""><span class="proName">小米8</span><span class="proPrice">2999</span></div>-->
+                    <!--<div class="totalCart"><span class="totalPro">共几件商品</span><a href="../html/cart.html">去购物车结算</a><span class="totalPrice">2999元</span></div>-->
+                </div>
+            </li>
+        </ul>
+
+    </nav>
+</div>
+<div class="warp">
+    <div class="navList">
+        <div class="dd">
+            <h1 style="background: url('imgs/milogo.png') 50% 50%" id="home"></h1>
+            <a href="#"
+               style="background: url('http://i1.mifile.cn/a4/cms_15373613641608_oBmfS.gif') no-repeat center center"></a>
+            <ul class="pro">
+                <li class="phone"><a href="html/prolist.html">小米手机</a></li>
+                <li class="redphone"><a href="html/prolist.html">红米</a></li>
+                <li class="tv"><a href="html/prolist.html">电视</a></li>
+                <li><a href="html/prolist.html">笔记本</a></li>
+                <li><a href="html/prolist.html">空调</a></li>
+                <li><a href="html/prolist.html">新品</a></li>
+                <li><a href="html/prolist.html">路由器</a></li>
+                <li><a href="html/prolist.html">智能硬件</a></li>
+                <li><a href="html/prolist.html">服务</a></li>
+                <li><a href="html/prolist.html">社区</a></li>
+            </ul>
+        </div>
+        <div class="ss">
+            <div class="put">
+                <a href="#">小米8</a><a href="#">小米MIX2S</a>
+            </div>
+            <button class="iconfont"> &#xe618;</button>
+        </div>
+
+
+    </div>
+    <!--鼠标经过显示产品-->
+    <div class="proListw">
+        <ul class="proList">
+            <!--<li><div class="li-header"><span>新品</span></div><div class="li-img" style="background-image: url('')"></div><p class="name"></p><p class="price"></p></li>-->
+
+        </ul>
+
+    </div>
+    <div class="slide">
+        <div class="slide-list iconfont">
+            <ul>
+                <li data-id="phone"><a href="html/prolist.html">手机 电话卡<span class="iconfont">&#xe637;</span></a></li>
+                <li data-id="tv"><a href="html/prolist.html">电视 盒子<span class="iconfont">&#xe637;</span></a></li>
+                <li data-id="pc"><a href="html/prolist.html">笔记本 平板<span class="iconfont">&#xe637;</span></a></li>
+                <li data-id="jD"><a href="html/prolist.html">家电 插板线<span class="iconfont">&#xe637;</span></a></li>
+                <li data-id="watch"><a href="html/prolist.html">出行 穿戴<span class="iconfont">&#xe637;</span></a></li>
+                <li data-id="ai"><a href="html/prolist.html">智能 路由器<span class="iconfont">&#xe637;</span></a></li>
+                <li data-id="cD"><a href="html/prolist.html">电源 配件<span class="iconfont">&#xe637;</span></a></li>
+                <li data-id="child"><a href="html/prolist.html">个护 儿童<span class="iconfont">&#xe637;</span></a></li>
+                <li data-id="earphone"><a href="html/prolist.html">耳机 音响<span class="iconfont">&#xe637;</span></a></li>
+                <li data-id="life"><a href="html/prolist.html">生活 箱包<span class="iconfont">&#xe637;</span></a></li>
+            </ul>
+
+        </div>
+        <div class="totalL">
+            <div class="total-w">
+                <!--<div class="total-p" style="background-image: url('')"><p class="totalName-p"></p></div>-->
+            </div>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="imgs/slider.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="imgs/slider1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="imgs/slider2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="imgs/slider3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="imgs/slider4.jpg" alt=""></div>
+            </div>
+            <div class="iconfont swiper-button-prev">&#xe63b;</div><!--左箭头-->
+            <div class="iconfont swiper-button-next">&#xe637;</div><!--右箭头-->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="hotPro">
+        <div class="icon">
+            <div><i class="iconfont">&#xe63c;</i>选购手机</div>
+            <div><i class="iconfont">&#xe63c;</i>选购手机</div>
+            <div><i class="iconfont">&#xe63c;</i>选购手机</div>
+            <div><i class="iconfont">&#xe63c;</i>选购手机</div>
+            <div><i class="iconfont">&#xe63c;</i>选购手机</div>
+            <div><i class="iconfont">&#xe63c;</i>选购手机</div>
+        </div>
+        <div class="phone"><img src="imgs/index1.jpg" alt=""></div>
+        <div class="phone"><img src="imgs/index2.jpg" alt=""></div>
+        <div class="phone"><img src="imgs/index3.jpg" alt=""></div>
+    </div>
+
+    <div class="miBuy">
+        <h2>小米闪购</h2>
+        <div class="hotBuy">
+            <div class="time"> <p>00:00场</p><img src="imgs/flashBuy.png" alt=""><p>距离开始还有</p>
+            <div class="dTime">
+                <span class="hour">00</span>:<span class="minute">00</span>:<span class="second">00</span>
+            </div>
+            </div>
+            <div class="buyPro"><img src="imgs/miBuy.jpg" alt=""></div>
+            <div class="buyPro"><img src="imgs/miBuy.jpg" alt=""></div>
+            <div class="buyPro"><img src="imgs/miBuy.jpg" alt=""></div>
+            <div class="buyPro"><img src="imgs/miBuy.jpg" alt=""></div>
+        </div>
+    </div>
+
+    <div class="line">
+        <img src="imgs/indexline.jpg" alt="">
+    </div>
+
+
+    <div class="miFanW">
+        <div class="miFan">
+            <h2>家电</h2>
+            <div class="miFanList">
+                <div class="miFanPro"><img src="imgs/miFan.jpg" alt=""></div>
+                <div class="miFanPro"><img src="imgs/miIndex1.jpg" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+                <div class="miFanPro"><img src="imgs/miIndex1.jpg" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+                <div class="miFanPro"><img src="imgs/miIndex1.jpg" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+                <div class="miFanPro"><img src="imgs/miIndex1.jpg" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+            </div>
+            <div class="miFanList">
+                <div class="miFanPro"><img src="imgs/mifan3.png" alt=""></div>
+                <div class="miFanPro"><img src="imgs/miFan2.png" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+                <div class="miFanPro"><img src="imgs/miFan2.png" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+                <div class="miFanPro"><img src="imgs/miFan2.png" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+                <div class="miFanPro"><img src="imgs/miFan2.png" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="line">
+        <img src="imgs/indexline.jpg" alt="">
+    </div>
+
+
+    <div class="miFanW">
+        <div class="miFan">
+            <h2>家电</h2>
+            <div class="miFanList">
+                <div class="miFanPro"><img src="imgs/miFan.jpg" alt=""></div>
+                <div class="miFanPro"><img src="imgs/miIndex1.jpg" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+                <div class="miFanPro"><img src="imgs/miIndex1.jpg" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+                <div class="miFanPro"><img src="imgs/miIndex1.jpg" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+                <div class="miFanPro"><img src="imgs/miIndex1.jpg" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+            </div>
+            <div class="miFanList">
+                <div class="miFanPro"><img src="imgs/mifan3.png" alt=""></div>
+                <div class="miFanPro"><img src="imgs/miFan2.png" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+                <div class="miFanPro"><img src="imgs/miFan2.png" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+                <div class="miFanPro"><img src="imgs/miFan2.png" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+                <div class="miFanPro"><img src="imgs/miFan2.png" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="line">
+        <img src="imgs/indexline.jpg" alt="">
+    </div>
+
+    
+    <div class="miFanW">
+        <div class="miFan">
+            <h2>家电</h2>
+            <div class="miFanList">
+                <div class="miFanPro"><img src="imgs/miFan.jpg" alt=""></div>
+                <div class="miFanPro"><img src="imgs/miIndex1.jpg" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+                <div class="miFanPro"><img src="imgs/miIndex1.jpg" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+                <div class="miFanPro"><img src="imgs/miIndex1.jpg" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+                <div class="miFanPro"><img src="imgs/miIndex1.jpg" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+            </div>
+            <div class="miFanList">
+                <div class="miFanPro"><img src="imgs/mifan3.png" alt=""></div>
+                <div class="miFanPro"><img src="imgs/miFan2.png" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+                <div class="miFanPro"><img src="imgs/miFan2.png" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+                <div class="miFanPro"><img src="imgs/miFan2.png" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+                <div class="miFanPro"><img src="imgs/miFan2.png" alt=""><div class="hoverDv"><img src="imgs/hover.png" alt=""></div></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<footer>
+    <div class="footer1w">
+        <ul class="fuw">
+            <li><i class="iconfont">&#xe61b;</i>预约维修服务</li>
+            <li><i class="iconfont">&#xe67d;</i>七天无理由退货</li>
+            <li><i class="iconfont">&#xe621;</i>15天免费维修</li>
+            <li><i class="iconfont">&#xe605;</i>满150元包邮</li>
+            <li><i class="iconfont">&#xe62d;</i>520家售后网点</li>
+        </ul>
+        <div class="dl">
+            <dl>
+                <dt>帮助中心</dt>
+                <dd>账户管理</dd>
+                <dd>购物指南</dd>
+                <dd>订单操作</dd>
+            </dl>
+            <dl>
+                <dt>服务支持</dt>
+                <dd>售后政策</dd>
+                <dd>自助服务</dd>
+                <dd>相关下载</dd>
+            </dl>
+            <dl>
+                <dt>线下门店</dt>
+                <dd>小米之间</dd>
+                <dd>服务网点</dd>
+                <dd>授权体验店</dd>
+            </dl>
+            <dl>
+                <dt>关于小米</dt>
+                <dd>了解小米</dd>
+                <dd>加入小米</dd>
+                <dd>投资者关系</dd>
+            </dl>
+            <dl>
+                <dt>关于小米</dt>
+                <dd>了解小米</dd>
+                <dd>加入小米</dd>
+                <dd>投资者关系</dd>
+            </dl>
+            <dl>
+                <dt>关于小米</dt>
+                <dd>了解小米</dd>
+                <dd>加入小米</dd>
+                <dd>投资者关系</dd>
+            </dl>
+            <div class="tel">
+                <p class="num">400-100-5678</p>
+                <p>周一至周四 8:00-18:00</p>
+                <p>仅收市话费</p>
+                <button class="iconfont">&#xe641;联系客服</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer2w">
+        <img src="imgs/milogo.png" alt="" id="logoMi">
+        <img src="imgs/mi-footer.jpg" alt="" style="float: right;width: 400px;height: 40px;">
+        <ul>
+            <li>小米商城</li>
+            <li>MIUI</li>
+            <li>米加</li>
+            <li>密聊</li>
+            <li>多看</li>
+            <li>游戏</li>
+            <li>路由器</li>
+            <li>米粉卡</li>
+            <li>政企服务</li>
+            <li>小米天猫店</li>
+            <li>隐私政策</li>
+            <li>问题犯规</li>
+            <li>廉政举报</li>
+            <li>Select Region</li>
+        </ul>
+        <p>© mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2017]1530-131号 营业执照</p>
+        <p>违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p>
+    </div>
+    <p class="footerp"></p>
+</footer>
+
+<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+<script src="https://cdn.bootcss.com/Swiper/4.3.0/js/swiper.js"></script>
+<!--<script src="js/index.js"></script>-->
+</body>
+</html>
